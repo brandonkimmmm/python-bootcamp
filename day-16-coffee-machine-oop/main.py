@@ -30,12 +30,13 @@ def complete_order(order):
 
 def run():
     order = input(f"What would you like? ({menu.get_items()}): ")
-    if order == "report":
-        get_report()
-    elif order == "off":
-        stop_running()
-    else:
-        complete_order(order)
+    match order:
+        case "off":
+            stop_running()
+        case "report":
+            get_report()
+        case _:
+            complete_order(order)
 
 
 while is_running:
