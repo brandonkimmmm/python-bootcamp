@@ -34,7 +34,6 @@ color_list = [
 
 colormode(255)
 tim = Turtle()
-tim.shape("circle")
 tim.speed("fastest")
 tim.hideturtle()
 tim.penup()
